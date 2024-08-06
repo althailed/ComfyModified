@@ -40,10 +40,10 @@
 */
 
   /* Spacing - Default value : 8px */
-  --user-buttons-spacing: 8px !important;
+  --user-buttons-spacing: 8px;
 
   /* Color - Default value : #096DC0 */
-  --user-buttons-color: #872bff !important;
+  --user-buttons-color: #096dc0;
 
   /* ═══════『 ⭕ Roundness settings 』═══════
 *
@@ -53,76 +53,76 @@
 */
 
   /* Avatars - Default value : 5px */
-  --avatar-radius: 10px !important;
+  --avatar-radius: 2px;
 
   /* Status - Default value : 3px */
-  --status-radius: 5px !important;
+  --status-radius: 3px;
 
   /* Servers - Default value : 8px */
-  --server-radius: 10px !important;
+  --server-radius: 2px;
 
   /* ═══════『 😃 Colored emoji picker 』═══════
 *   Change the value to "100%" if you want the default one */
 
-  --colored-emoji: grayscale(0%) !important;
+  --colored-emoji: grayscale(0%);
 
   /* ═══════『 📜 Server/channel list 』═══════ */
 
   /* Mention - Default value : #F04747 */
-  --mention-color: #ae83ff !important;
+  --mention-color: #c3f047;
 
   /* Unread - Default value : #7289DA */
-  --unread-color: #ffacac !important;
+  --unread-color: #7289da;
 
   /*  『 🔴 Mention colors in chat 』 */
 
   /* Bar on the right - Default value : #C66262 */
-  --mention-color-bar: #ae83ff !important;
+  --mention-color-bar: #c3f047;
 
   /* Background - Default value : #C662621F */
-  --mention-color-background: #ec7efb1f !important;
+  --mention-color-background: #cbda4517;
 
   /* On hover - Default value : #C6626226 */
-  --mention-color-hover: #7dffd226 !important;
+  --mention-color-hover: #97c90d0a;
 
   /* ═══════『 💬 Chat buttons 』═══════ */
 
   /* Default value : #7289DA */
-  --chat-buttons: #6f6dff !important;
+  --chat-buttons: #7289da;
 
   /* ═══════『 💬 SpotifyControls seek bar 』═══════
 *   ℹ️ : If you don't have the plugin : https://betterdiscord.app/plugin/SpotifyControls */
 
   /* Default value : #1EDC62 */
-  --spotify-color: #90ffb7 !important;
+  --spotify-color: #1edc62;
 
   /* ═══════『 🟢 Status 』═══════ */
 
   /* Online - Default value : #43B581 */
-  --online: #84ffc8 !important;
+  --online: #43b581;
 
   /* Idle - Default value : #FAA61A */
-  --iddle: #ffd07f !important;
+  --iddle: #faa61a;
 
   /* Do Not Disturb - Default value : #F04747 */
-  --dnd: #ff8484 !important;
+  --dnd: #f04747;
 
   /* Offline - Default value : #747F8D */
-  --offline: #1b1c1f !important;
+  --offline: #747f8d;
 
   /* Streaming - Default value : #593695 */
-  --streaming: #593695 !important;
+  --streaming: #593695;
 
   /* ═══════『 🔰 User popout 』═══════ */
 
   /* Playing wave color */
-  --playing: #a784ff !important;
+  --playing: #5477aa83;
 
   /* Listening wave color */
-  --listening: #52ef89 !important;
+  --listening: #245736;
 
   /* Role circle - Default value : 5px */
-  --role-circle: 5px !important;
+  --role-circle: 5px;
 
   /* ═══════『 🗑️ Discord logo 』═══════
 *   Set it to "block" if you still want it */
@@ -131,29 +131,29 @@
 }
 
 .theme-dark {
-  --background-primary: #000000 !important;
-  --background-secondary: #000000 !important;
-  --background-secondary-alt: #000000 !important;
-  --background-tertiary: #000000 !important;
-  --background-accent: #872bff !important;
+  --background-primary: #23283d;
+  --background-secondary: #1e2233;
+  --background-secondary-alt: #191f2e;
+  --background-tertiary: #101320;
+  --background-accent: #7289da;
 
-  --modal-background: #000000 !important;
-  --background-mobile-primary: #000000 !important;
-  --background-mobile-secondary: #000000 !important;
-  --channeltextarea-background: #000000 !important;
-  --background-message-hover: transparent !important;
-  --background-modifier-hover: #00000010 !important;
-  --background-modifier-active: #0000001a !important;
-  --background-modifier-selected: #0000001f !important;
-  --deprecated-card-bg: #000000 !important;
-  --background-floating: #000000 !important;
-  --deprecated-quickswitcher-input-background: #101320 !important;
-  --elevation-low: none !important;
-  --scrollbar-auto-thumb: #121722 !important;
-  --scrollbar-auto-track: #191f2e !important;
-  --scrollbar-thin-thumb: #141925 !important;
-  --activity-card-background: #101320 !important;
-  --input-background: #1e2233 !important;
+  --modal-background: #23283d;
+  --background-mobile-primary: #23283d;
+  --background-mobile-secondary: #1e2233;
+  --channeltextarea-background: #191f2e;
+  --background-message-hover: transparent;
+  --background-modifier-hover: #00000010;
+  --background-modifier-active: #0000001a;
+  --background-modifier-selected: #0000001f;
+  --deprecated-card-bg: #12141f63;
+  --background-floating: #101320;
+  --deprecated-quickswitcher-input-background: #101320;
+  --elevation-low: none;
+  --scrollbar-auto-thumb: #121722;
+  --scrollbar-auto-track: #191f2e;
+  --scrollbar-thin-thumb: #141925;
+  --activity-card-background: #101320;
+  --input-background: #1e2233;
 }
 
 .theme-light {
@@ -261,24 +261,6 @@
 .channelTextArea_a7d72e .buttons_d0696b > * { position: relative; top: -44px;}
 .channelTextArea_a7d72e:hover .buttons_d0696b > * { top: 0;}
 
-.appMount_ea7e65 .app_bd26cc { opacity: 0; transition: 0.15s;}
-.appMount_ea7e65:hover .app_bd26cc { opacity: 1; transition: 0.15s;}
-.appMount_ea7e65:after {
-    content: "";
-    position: fixed;
-    background: url('https://raw.githubusercontent.com/T3M1N4L/T3M1N4L/main/images/XOsX.gif') center/20% no-repeat;
-    width: 100%; height: 100%;
-    opacity: 1;
-}
-.appMount_ea7e65:hover:after { opacity: 0; pointer-events: none;}
-.role_f9575e {
-  transform: translate(0);
-  overflow: hidden;
-  border: 0;
-
-  --transparency: .4;
-  border-radius: 5px;
-}
 .role_f9575e .roleRemoveIcon_e4010c {
   margin: 0;
   left: unset;
