@@ -1,0 +1,218 @@
+/**
+ * @name gfaf
+ * @author DevilBro
+ * @version 1.0.5
+ * @description Allows you to use a background image without greatly altering the basic look of Discord.
+ * @source https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BasicBackground/BasicBackground.theme.css
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground
+ * @authorId 278543574059057154
+ * @BDEditor BasicBackground
+*/
+
+@import "https://comfy-themes.github.io/Discord/betterdiscord/main.css";
+/* ═══════『 🎵 ・ Better SpotifyControls seek bar 』- Comment the line below if you don't want this spotify bar */
+@import "https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css";
+
+
+/* ═══════『 🎵 ・ Vencord Spotify Plugin 』- Comment the line below if you don't want this spotify bar FOR VENCORD */
+@import "https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css";
+:root {
+  
+  /* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
+  --disable-animations: 2s channel-unread infinite;
+
+  /* ═══════『 ⚙️ / 🎤 / 🎧 ・ User button 』═══════
+*
+*   ➥ A higher value means more space between the icons and a lower ...
+*
+*    ℹ️ : If you want to revert those to the old area, join the support server and check #css-snippets
+*
+*/
+
+  /* Spacing - Default value : 8px */
+  --user-buttons-spacing: 8px;
+
+  /* Color - Default value : #096DC0 */
+  --user-buttons-color: #096dc0;
+
+  /* ═══════『 ⭕ Roundness settings 』═══════
+*
+*    ➥ A higher value means more rounded corners and a lower ...
+*       0 ➜ Square
+*       25 ➜ Circle
+*/
+
+  /* Avatars - Default value : 5px */
+  --avatar-radius: 2px;
+
+  /* Status - Default value : 3px */
+  --status-radius: 3px;
+
+  /* Servers - Default value : 8px */
+  --server-radius: 2px;
+
+  /* ═══════『 😃 Colored emoji picker 』═══════
+*   Change the value to "100%" if you want the default one */
+
+  --colored-emoji: grayscale(0%);
+
+  /* ═══════『 📜 Server/channel list 』═══════ */
+
+  /* Mention - Default value : #F04747 */
+  --mention-color: #c3f047;
+
+  /* Unread - Default value : #7289DA */
+  --unread-color: #7289da;
+
+  /*  『 🔴 Mention colors in chat 』 */
+
+  /* Bar on the right - Default value : #C66262 */
+  --mention-color-bar: #c3f047;
+
+  /* Background - Default value : #C662621F */
+  --mention-color-background: #cbda4517;
+
+  /* On hover - Default value : #C6626226 */
+  --mention-color-hover: #97c90d0a;
+
+  /* ═══════『 💬 Chat buttons 』═══════ */
+
+  /* Default value : #7289DA */
+  --chat-buttons: #7289da;
+
+  /* ═══════『 💬 SpotifyControls seek bar 』═══════
+*   ℹ️ : If you don't have the plugin : https://betterdiscord.app/plugin/SpotifyControls */
+
+  /* Default value : #1EDC62 */
+  --spotify-color: #1edc62;
+
+  /* ═══════『 🟢 Status 』═══════ */
+
+  /* Online - Default value : #43B581 */
+  --online: #43b581;
+
+  /* Idle - Default value : #FAA61A */
+  --iddle: #faa61a;
+
+  /* Do Not Disturb - Default value : #F04747 */
+  --dnd: #f04747;
+
+  /* Offline - Default value : #747F8D */
+  --offline: #747f8d;
+
+  /* Streaming - Default value : #593695 */
+  --streaming: #593695;
+
+  /* ═══════『 🔰 User popout 』═══════ */
+
+  /* Playing wave color */
+  --playing: #5477aa83;
+
+  /* Listening wave color */
+  --listening: #245736;
+
+  /* Role circle - Default value : 5px */
+  --role-circle: 5px;
+
+  /* ═══════『 🗑️ Discord logo 』═══════
+*   Set it to "block" if you still want it */
+
+  --discord-logo: none;
+	
+	
+	--transparencycolor_v:			var(--transparencycolor_s, var(--transparencycolor));
+	--transparencyalpha_v:			var(--transparencyalpha_s, var(--transparencyalpha));
+
+	--background_v:				var(--background_s, var(--background));
+	--backgroundposition_v:			var(--backgroundposition_s, var(--backgroundposition));
+	--backgroundsize_v:			var(--backgroundsize_s, var(--backgroundsize));
+	--backgroundblur_v:			calc(1px * var(--backgroundblur_s, var(--backgroundblur)));
+
+
+	--accentcolor2:				var(--accentcolor_v);
+	--mentioncolor:				var(--accentcolor_v);
+	--linkcolor:				var(--accentcolor_v);
+  --background: url('https://i.imgur.com/Oo8Hhp0.jpg');
+  --backgroundsize: cover;
+  --backgroundposition: center;
+  --transparencycolor: 0,0,0;
+  --transparencyalpha: 0.7;
+}
+
+.theme-dark {
+  --background-primary: #23283d;
+  --background-secondary: #1e2233;
+  --background-secondary-alt: #191f2e;
+  --background-tertiary: #101320;
+  --background-accent: #7289da;
+
+  --modal-background: #23283d;
+  --background-mobile-primary: #23283d;
+  --background-mobile-secondary: #1e2233;
+  --channeltextarea-background: #191f2e;
+  --background-message-hover: transparent;
+  --background-modifier-hover: #00000010;
+  --background-modifier-active: #0000001a;
+  --background-modifier-selected: #0000001f;
+  --deprecated-card-bg: #12141f63;
+  --background-floating: #101320;
+  --deprecated-quickswitcher-input-background: #101320;
+  --elevation-low: none;
+  --scrollbar-auto-thumb: #121722;
+  --scrollbar-auto-track: #191f2e;
+  --scrollbar-thin-thumb: #141925;
+  --activity-card-background: #101320;
+  --input-background: #1e2233;
+}
+
+html {
+	color: var(--header-primary);
+}
+
+/* ~~~~		1.		TRANSPARENCY					~~~~ */
+
+body,											/* body													*/
+#app-mount .app_b1f720,									/* app					container							*/
+#app-mount .app_de4237,									/* app					inner								*/
+#app-mount .bg__12180,									/* app					background							*/
+#app-mount .chat__52833,								/* chat					container							*/
+#app-mount .chatContent__5dca8,								/* chat					channel								*/
+#app-mount .contentRegion__0bec1 {							/* settings				content								*/
+	background: transparent;
+}
+
+#app-mount .scroller__00e7e {								/* peoples				activity scroller						*/
+	border: none;
+}
+
+#app-mount .sidebarRegion__60457,							/* settings				sidebar								*/
+#app-mount .sidebar__0OpfR {								/* sidebarlist				sidebar								*/
+	background-color: rgba(var(--transparencycolor_v), calc(0.2 * (var(--transparencyalpha_v) / (var(--transparencyalpha_v) + 0.00000000000000000000001))));
+}
+
+#app-mount {										/* app-mount												*/
+	background-color: rgba(var(--transparencycolor_v), var(--transparencyalpha_v));
+}
+
+
+/* ~~~~		2.		BACKGROUND					~~~~ */
+
+body::before,
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+body::before {
+	background: var(--background_v) var(--backgroundposition_v)/var(--backgroundsize_v);
+}
+
+
